@@ -22,8 +22,7 @@ img {
     color: red;
 }
 
-
-.form-wrapper{
+.form-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,11 +33,28 @@ img {
 }
 
 body {
-    background-image: url("/assets/arena-background.png");
+    background-image: url('/assets/arena-background.png');
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
+    position: relative;
 }
+
+.highscore-list__text {
+    color: yellow;
+    font-size: 2rem;
+}
+.music-btn {
+    cursor: pointer;
+    color: rgb(236, 240, 6);
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
 .d-none {
     display: none;
 }

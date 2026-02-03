@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" href="data:,">
     <script src="./scripts/oGameData.js"></script>
     <script type="module" src="./scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/b0ab95b079.js" crossorigin="anonymous"></script>
     <title>Gotta catch 'em all</title>
   </head>
   <body>
@@ -38,8 +40,10 @@
             </ol>
             <button id="playAgainBtn">Play again?</button>
         </section>
+        <button id="musicBtn" data-mute="" class="music-btn" event="">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
     </section>
-    
     <!-- Läs in audioelementet från DOMen. För att spela .play(), för att pausa .pause(), för att starta om .load()  -->
     <audio src="./assets/pokemon_vs_trainer.mp3"></audio>
   </body>
