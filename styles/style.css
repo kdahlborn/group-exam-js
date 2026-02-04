@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Ser till så att bilderna får korrekt storlek och deras rörelse animeras */
+/* När ni sätter intervallen efter vilken pokemonen får sin nya position bör den intervallen överensstämma med tiden här. 3s. */
+body {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	position: relative;
+}
+
+img {
+	width: 300px;
+	transition: all 3s linear;
+	position: absolute;
+}
+
+h1 {
+	font-family: 'Mouse Memoirs', sans-serif;
+	color: red;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 1px;
+}
+
+h3 {
+	font-weight: 600;
+}
+
+.game-field {
+	position: relative;
+	display: grid;
+	place-content: center;
+	width: 100%;
+	height: 100%;
+	background-image: url('/assets/arena-background.png');
+	background-size: cover;
+}
+
+.error-msg {
+	color: red;
+}
+
+.form-wrapper {
+	background-image: url('/assets/background.png');
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+
+	.form {
+		background-color: rgba(255, 255, 255, 0.8);
+		border-radius: 2rem;
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+
+		.form__text-input {
+			border-radius: 0.5rem;
+			padding: 0.5rem;
+		}
+
+		.radioWrapper {
+			align-self: flex-start;
+		}
+	}
+}
+
+.high-score {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	gap: 1rem;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 2rem;
+	padding: 2rem;
+
+	.highscore-list {
+		display: grid;
+		gap: 0.5rem;
+	}
+}
+.btn {
+	border: none;
+	border-radius: 0.5rem;
+	background-color: red;
+	color: white;
+	font-size: 1.25rem;
+	font-weight: 600;
+	padding: 1rem;
+}
+
+.error {
+	outline: 2px solid red;
+	border-radius: 0.5rem;
+	padding: 0.25rem;
+}
+
+.highscore-list__text {
+	font-size: 1rem;
+}
+
+.music-btn {
+	cursor: pointer;
+	color: rgb(236, 240, 6);
+	background-color: transparent;
+	border: none;
+	font-size: 2rem;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+.d-none {
+	display: none;
+}
